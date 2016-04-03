@@ -16,7 +16,7 @@
 <meta property="og:description" content="一、生成个人主页  注册一个github账号，创建一个以你用户名为前缀的仓库，例如：KingCQ.github.com,点击仓库的设置（Settings）进入里面生成 GitHubPages 成功完成相应操作后你会看到 Your site is published at http://kingcq.github.io. 打开这个网页，这就是你的pages页面了
 二、添加SSH Keys 
   生成">
-<meta property="og:updated_time" content="2016-04-03T07:34:56.000Z">
+<meta property="og:updated_time" content="2016-04-03T07:45:26.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一步一步搭建Hexo博客">
 <meta name="twitter:description" content="一、生成个人主页  注册一个github账号，创建一个以你用户名为前缀的仓库，例如：KingCQ.github.com,点击仓库的设置（Settings）进入里面生成 GitHubPages 成功完成相应操作后你会看到 Your site is published at http://kingcq.github.io. 打开这个网页，这就是你的pages页面了
@@ -80,13 +80,13 @@
 				<div class="tips-box hide">
 					<div class="tips-arrow"></div>
 					<ul class="tips-inner">
-						<li>菜单</li>
+						<li>Menu</li>
 						<li>Tags</li>
 						
-						<li>友情链接</li>
+						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -252,11 +252,10 @@
 <p>二、添加SSH Keys </p>
 <p>  生成密钥：<br>  ssh-keygen -t rsa -C “wangchengqvan@hotmail.com”<br>  上述命令若执行成功，会在H:\git\myssh目录下生成两个文件id_rsa和id_rsa.pub，最后两步：<br>  用文本编辑器打开ssh.pub文件，拷贝其中的内容，将其添加到Add SSH Key<br>  好，我们来验证一下：<br>  ssh -T git@github.com</p>
 <p>  如果出现Permission denied (publickey).（addkey哪一步可能出现了问题）<br>  仔细检查，可能是密钥失效或者拼写错误，重新来一次，成功后会有如下提示：<br>  Hi username! You’ve successfully authenticated…</p>
-<p>三、安装Hexo<br>  假设你已经安装好了npm，如果没有请自行Google<br>  npm install -g hexo<br>  然后，执行init命令初始化hexo到你指定的目录：<br>  hexo init <folder><br>  好啦，至此，全部安装工作已经完成！</folder></p>
-<p>四、生成静态网页<br>  cd 到你的init目录，执行如下命令，生成静态页面至hexo\public\目录。<br>  hexo generate<br>  命令必须在init目录下执行，否则不成功，但是也不报错<br>  把生成的网页部署到服务器,执行命令<br>  hexo deploy<br>  在执行 hexo deploy 后,如果出现 error deployer not found:github 的错误<br>  npm install hexo-deployer-git –save<br>  改了之后执行，然后再部署试试<br>  本地启动<br>  执行如下命令，启动本地服务，进行文章预览调试。<br>  hexo server<br>  用浏览器打开<a href="http://localhost:4000你就可以欣赏到hexo个人主页的效果了。" target="_blank" rel="external">http://localhost:4000你就可以欣赏到hexo个人主页的效果了。</a><br>undefined</p>
-<ol>
-<li>关闭Xcode 和 模拟器；</li>
-</ol>
+<p>三、安装Hexo<br>  假设你已经安装好了npm，如果没有请自行Google<br>  npm install -g hexo<br>  然后，执行init命令初始化hexo到你指定的目录：<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br></pre></td></tr></table></figure></p>
+<p>  好啦，至此，全部安装工作已经完成！</p>
+<p>四、生成静态网页<br>  cd 到你的init目录，执行如下命令，生成静态页面至hexo\public\目录。<br>  hexo generate<br>  命令必须在init目录下执行，否则不成功，但是也不报错<br>  把生成的网页部署到服务器,执行命令<br>  hexo deploy<br>  More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a><br>  在执行 hexo deploy 后,如果出现 error deployer not found:github 的错误<br>  npm install hexo-deployer-git –save<br>  改了之后执行，然后再部署试试<br>  本地启动<br>  执行如下命令，启动本地服务，进行文章预览调试。</p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><p>  hexo server<br>  用浏览器打开<a href="http://localhost:4000你就可以欣赏到hexo个人主页的效果了。" target="_blank" rel="external">http://localhost:4000你就可以欣赏到hexo个人主页的效果了。</a></p>
 
       
     </div>
@@ -285,7 +284,7 @@
 <div class="share_jia">
 	<!-- JiaThis Button BEGIN -->
 	<div class="jiathis_style">
-		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<span class="jiathis_txt">Share to: &nbsp; </span>
 		<a class="jiathis_button_facebook"></a> 
     <a class="jiathis_button_twitter"></a>
     <a class="jiathis_button_plus"></a> 

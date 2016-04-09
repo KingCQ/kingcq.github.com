@@ -6,19 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>iOS安全问题之加密解密 | KingCQ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="## 
-一、应用场景  越来越多的应用和金钱都要打交道，用户隐私安全的保护也变得空前的重要了，互联网金融应用、电商应用支付、网络存储、数据网络传输……都需要对数据进行保护。">
+  <meta name="description" content="一、应用场景  越来越多的应用和金钱都要打交道，用户隐私安全的保护也变得空前的重要了，互联网金融应用、电商应用支付、网络存储、数据网络传输……都需要对数据进行保护。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS安全问题之加密解密">
 <meta property="og:url" content="http://kingcq.github.io/2016/02/05/iOS安全问题之加密解密/index.html">
 <meta property="og:site_name" content="KingCQ">
-<meta property="og:description" content="## 
-一、应用场景  越来越多的应用和金钱都要打交道，用户隐私安全的保护也变得空前的重要了，互联网金融应用、电商应用支付、网络存储、数据网络传输……都需要对数据进行保护。">
-<meta property="og:updated_time" content="2016-04-09T12:35:10.000Z">
+<meta property="og:description" content="一、应用场景  越来越多的应用和金钱都要打交道，用户隐私安全的保护也变得空前的重要了，互联网金融应用、电商应用支付、网络存储、数据网络传输……都需要对数据进行保护。">
+<meta property="og:updated_time" content="2016-04-09T15:23:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS安全问题之加密解密">
-<meta name="twitter:description" content="## 
-一、应用场景  越来越多的应用和金钱都要打交道，用户隐私安全的保护也变得空前的重要了，互联网金融应用、电商应用支付、网络存储、数据网络传输……都需要对数据进行保护。">
+<meta name="twitter:description" content="一、应用场景  越来越多的应用和金钱都要打交道，用户隐私安全的保护也变得空前的重要了，互联网金融应用、电商应用支付、网络存储、数据网络传输……都需要对数据进行保护。">
   
     <link rel="alternative" href="/atom.xml" title="KingCQ" type="application/atom+xml">
   
@@ -245,8 +242,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>## </p>
-<h3 id="一、应用场景"><a href="#一、应用场景" class="headerlink" title="一、应用场景"></a>一、应用场景</h3><p>  越来越多的应用和金钱都要打交道，用户隐私安全的保护也变得空前的重要了，互联网金融应用、电商应用支付、网络存储、数据网络传输……都需要对数据进行保护。</p>
+        <h3 id="一、应用场景"><a href="#一、应用场景" class="headerlink" title="一、应用场景"></a>一、应用场景</h3><p>  越来越多的应用和金钱都要打交道，用户隐私安全的保护也变得空前的重要了，互联网金融应用、电商应用支付、网络存储、数据网络传输……都需要对数据进行保护。</p>
   <a id="more"></a>
 <h3 id="二、加密解密解决方案"><a href="#二、加密解密解决方案" class="headerlink" title="二、加密解密解决方案"></a>二、加密解密解决方案</h3><p>  既然数据安全如此重要，那么解决思路呢？<br>  1、对数据内容加密（通常在传输过程中）<br>  2、对数据文件进行加密（通常用于本地数据库文件）</p>
 <h3 id="三、SQLCipher加密数据库文件"><a href="#三、SQLCipher加密数据库文件" class="headerlink" title="三、SQLCipher加密数据库文件"></a>三、SQLCipher加密数据库文件</h3><p>  SQLCipher是完全开源的，代码可以在github上面找到。<br>  我们可以通过Pod引进sqlcipher依赖<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pod <span class="string">'FMDB'</span>, <span class="string">'~&gt; 2.6'</span></span><br><span class="line">pod <span class="string">'SQLCipher'</span>, <span class="string">'~&gt; 3.3.1'</span></span><br></pre></td></tr></table></figure></p>

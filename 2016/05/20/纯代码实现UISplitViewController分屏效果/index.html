@@ -14,13 +14,11 @@
 <meta property="og:site_name" content="KingCQ">
 <meta property="og:description" content="##
 一、应用场景  UISplitViewController 是 iphone 6s plus,ipad系列常用的控件 在iOS8以上的iPhone中得到支持（ In iOS 8 and later）一个典型的场景：iPhone 6s plus 内置的设置APP; 根据苹果设计指南，UISplitViewController一般作为更控制器来使用即rootViewController（. Sp">
-<meta property="og:image" content="https://github.com/CNKCQ/SplitViewController">
-<meta property="og:updated_time" content="2016-05-20T08:26:15.000Z">
+<meta property="og:updated_time" content="2016-05-21T13:32:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="纯代码实现UISplitViewController分屏效果">
 <meta name="twitter:description" content="##
 一、应用场景  UISplitViewController 是 iphone 6s plus,ipad系列常用的控件 在iOS8以上的iPhone中得到支持（ In iOS 8 and later）一个典型的场景：iPhone 6s plus 内置的设置APP; 根据苹果设计指南，UISplitViewController一般作为更控制器来使用即rootViewController（. Sp">
-<meta name="twitter:image" content="https://github.com/CNKCQ/SplitViewController">
   
     <link rel="alternative" href="/atom.xml" title="KingCQ" type="application/atom+xml">
   
@@ -254,8 +252,7 @@
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> dest = DetailController()</span><br><span class="line"><span class="keyword">if</span> UIScreen.mainScreen().bounds.width &gt; UIScreen.mainScreen().bounds.height &#123;</span><br><span class="line">   self.showDetailViewController(dest, sender: names[indexPath.row])</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">   self.showViewController(dest, sender: names[indexPath.row])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>  需要提醒一下的是，为了在dest中接收到的sender数据，dest必须实现split view controller的代理方法<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">func splitViewController(splitViewController: UISplitViewController, showDetailViewController vc: UIViewController, sender: AnyObject?) -&gt; Bool &#123;</span><br><span class="line">  title = <span class="string">"\(sender!)"</span></span><br><span class="line">  <span class="built_in">return</span> <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>  这样就简单实现了分屏效果</p>
-<h1 id="More-info-Deployment"><a href="#More-info-Deployment" class="headerlink" title="More info: Deployment"></a>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></h1><p>  <img src="https://github.com/CNKCQ/SplitViewController" alt="在这里可以看到我的完整示例代码哦!">!</p>
-
+<h1 id="实例代码-SplitViewController"><a href="#实例代码-SplitViewController" class="headerlink" title="实例代码: SplitViewController"></a>实例代码: <a href="https://github.com/CNKCQ/SplitViewController" target="_blank" rel="external">SplitViewController</a></h1>
       
     </div>
     
